@@ -46,6 +46,8 @@ def generate_combinations(work_queue):
         with ZipFile(outfile + '.zip' , 'w', zipfile.ZIP_DEFLATED) as zip_out:
             zip_out.write(outfile)
 
+        os.remove(outfile)
+
 
 
 

@@ -51,9 +51,11 @@
           <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dotalignerWrappers/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.07460545">
-                  <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-                  <folding />
+                <state vertical-scroll-proportion="0.8952654">
+                  <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#17#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -668,9 +670,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dotalignerWrappers/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07460545">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="0.8952654">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
