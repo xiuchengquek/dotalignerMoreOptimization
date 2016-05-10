@@ -2,7 +2,9 @@ import subprocess
 import sys
 import numpy as np
 from multiprocessing import Lock, Process, Queue, current_process
+import zipfile
 from zipfile import ZipFile
+
 import os
 
 
@@ -41,7 +43,7 @@ def generate_combinations(work_queue):
                                         ))
         fh_out.close()
 
-        with ZipFile(outfile + '.zip' , 'w') as zip_out:
+        with ZipFile(outfile + '.zip' , 'w', zipfile.ZIP_DEFLATED) as zip_out:
             zip_out.write(outfile)
 
 
