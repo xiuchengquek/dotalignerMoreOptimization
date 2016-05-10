@@ -19,7 +19,7 @@ def generate_combinations(work_queue):
 
     for samples in iter(work_queue.get, 'STOP'):
         outfile = 'dotaligner_command/%s %s.dotaligner.command.txt' % (samples[0], samples[1])
-        fh_out = ZipFile(outfile, 'w')
+        fh_out = open(outfile, 'w')
         for k in np.arange(0 ,1.1, 0.1):
             for t in np.arange(0 ,1.1, 0.1):
                 for o in np.arange(0.2 ,1.1, 0.2):
@@ -40,6 +40,11 @@ def generate_combinations(work_queue):
                                             dp2 = samples[1]
                                         ))
         fh_out.close()
+
+        with ZipFile(outfile + '.zip' , 'w') as zip_out:
+            zip_out.write(outfile)
+
+
 
 
 def main():
