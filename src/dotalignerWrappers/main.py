@@ -49,7 +49,7 @@ def main():
         os.mkdir('dotaligner_command')
 
     fileList = prepare_jobs_list(sys.argv[1])
-    n = 4
+    n = 32
     grouped_file = [fileList[i : i + n] for i in range(0, len(fileList), n)]
 
     work_queue =  Queue()
