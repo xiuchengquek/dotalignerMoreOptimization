@@ -2,6 +2,9 @@ import subprocess
 import sys
 import numpy as np
 from multiprocessing import Lock, Process, Queue, current_process
+from zipfile import ZipFile
+import os
+
 
 
 def prepare_jobs_list(listOfFile):
@@ -40,6 +43,10 @@ def generate_combinations(work_queue):
 
 
 def main():
+
+
+    if not os.exists('dotaligner_command'):
+        os.mkdir('dotaligner_command')
 
     fileList = prepare_jobs_list(sys.argv[1])
     n = 4
