@@ -45,11 +45,11 @@ def generate_combinations(work_queue):
 def main():
 
 
-    if not os.exists('dotaligner_command'):
+    if not os.path.exists('dotaligner_command'):
         os.mkdir('dotaligner_command')
 
     fileList = prepare_jobs_list(sys.argv[1])
-    n = 32
+    n = sys.argv[2]
     grouped_file = [fileList[i : i + n] for i in range(0, len(fileList), n)]
 
     work_queue =  Queue()
