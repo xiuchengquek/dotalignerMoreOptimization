@@ -50,7 +50,7 @@ def main():
 
     fileList = prepare_jobs_list(sys.argv[1])
     n = sys.argv[2]
-    grouped_file = [fileList[i : i + n] for i in range(0, len(fileList), n)]
+    #grouped_file = [fileList[i : i + n] for i in range(0, len(fileList), n)]
 
     work_queue =  Queue()
 
