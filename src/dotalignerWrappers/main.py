@@ -29,7 +29,7 @@ def generate_combinations(work_queue):
                         for s in np.arange(100 ,1100, 100):
                             for T in np.arange(1,11,1):
                                 for p0 in [0.001, 0.005]:
-                                    fh_out.write("/usr/bin/time -f \"\t%E\t%M\" {dotaligner} -k {k} -t {t} -o {o} -e {e} -s {s} -T {T} -p0 {p0} -d ./data/ps/{dp1}.dp.pp -d ./data/ps/{dp2}.dp.pp\n".format(
+                                    fh_out.write("/usr/bin/time -f \"\t%E\t%M\" {dotaligner} -k {k} -t {t} -o {o} -e {e} -s {s} -T {T} -p0 {p0} -d ./data/ps/{dp1}.dp.pp -d ./data/ps/{dp2}.dp.pp 2>&1\n".format(
                                             dotaligner = 'DotAligner',
                                             k = k,
                                             t = t,

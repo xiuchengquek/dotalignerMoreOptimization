@@ -13,7 +13,8 @@ def main(reciever_ip, sinker_ip):
     sinker.connect(sinker_ip)
 
     while True:
-        bash_script = receiver.recv_unicode()
+        dotaligner_command_file  = receiver.recv_unicode()
+        with open(dotaligner_command_file)
         cmd = ['sh', bash_script]
         p = subprocess.check_call(cmd)
         if (p == 1):
