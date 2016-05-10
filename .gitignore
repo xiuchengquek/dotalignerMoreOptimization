@@ -2,3 +2,4 @@
 data
 ps
 ps.tar.gz
+!data/pairwise_alignments.list
